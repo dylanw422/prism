@@ -1,0 +1,108 @@
+#search-app {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#search-right-side {
+    width: 88vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#logoarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#stockdata {
+    width: 88vw;
+    display: flex;
+    justify-content: center;
+}
+
+#currentprice {
+    width: 25vw;
+    text-align: center;
+}
+
+#currentprice > h3 {
+    font-family: 'SF Pro Thin';
+    letter-spacing: 0.05em;
+}
+
+#marketcap {
+    width: 25vw;
+    text-align: center;
+}
+
+#marketcap > h3 {
+    font-family: 'SF Pro Thin';
+    letter-spacing: 0.05em;
+}
+
+#prevearnings {
+    width: 25vw;
+    text-align: center;
+}
+
+#prevearnings > h3 {
+    font-family: 'SF Pro Thin';
+    letter-spacing: 0.05em;
+}
+
+#stockdatalower {
+    height: 50vh;
+    width: 88vw;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#news {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+    border: 1px solid rgb(43, 39, 56);
+    border-radius: 10px;
+    padding: 20px 20px 0px 20px
+}
+
+#news > h2 {
+    text-align: left;
+}
+
+#news > div {
+    overflow-y: scroll;
+}
+
+.article {
+    border-bottom: 1px solid rgb(43, 39, 56);
+    font-family: 'SF Pro Thin';
+    line-height: 1.6em;
+}
+
+.article:hover {
+    cursor: pointer;
+}
+
+.article
+
+.article > h3:hover {
+    text-decoration: underline;
+}
+
+.article > h3 > span {
+    color: gray;
+    font-size: 14px;
+    margin-left: 5px;
+    white-space: nowrap;
+}
+
+

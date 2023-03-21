@@ -1,0 +1,102 @@
+#crypto-page {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+#right-side-crypto {
+    width: 88vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#discover{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#discover > h3 {
+    font-family: 'SF Pro Thin';
+}
+
+#linking {
+    width: 15px;
+    -webkit-filter: invert(100%);
+    margin-left: 10px;
+}
+
+#linking:hover {
+    cursor: pointer;
+}
+
+#crypto-data {
+    width: 80vw;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cryptos {
+    display: flex;
+    width: 80vw;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid rgb(43, 39, 56);
+    padding: 3px 0px;
+}
+
+#table-headers > #cryptoNameHeader {
+    width: 150px;
+    text-align: center;
+}
+
+#table-headers > #cryptoSymbolHeader {
+    width: 200px;
+    text-align: center;
+}
+
+#table-headers > #marketcapHeader {
+    width: 500px;
+    text-align: center;
+}
+
+#table-headers > #currentpriceHeader {
+    width: 200px;
+    text-align: center;
+}
+
+#cryptoName {
+    width: 150px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'SF Pro Semibold';
+}
+
+#cryptoName > img {
+    width: 25px;
+    padding-left: 10px
+}
+
+#cryptoSymbol {
+    width: 200px;
+    text-align: center;
+}
+
+#cryptoPrices {
+    width: 500px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+#cryptoMarketCap {
+    width: 200px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}

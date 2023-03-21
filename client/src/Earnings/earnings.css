@@ -1,0 +1,91 @@
+#earnings-page {
+    display: flex;
+    flex-direction: row;
+}
+
+#earnings-right-side {
+    width: 88vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#er-date-header {
+    width: 200px;
+    text-align: center;
+}
+
+#er-stock-header {
+    width: 200px;
+    text-align: center;
+}
+
+#er-hour-header {
+    width: 200px;
+    text-align: center;
+}
+
+#er-estimate-header {
+    width: 200px;
+    text-align: center;
+}
+
+#er-actual-header {
+    width: 200px;
+    text-align: center;
+}
+
+#er-surprise-header {
+    width: 200px;
+    text-align: center;
+}
+
+#earnings-data {
+    width: 80vw;
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+.earnings {
+    display: flex;
+    width: 80vw;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid rgb(43, 39, 56);
+    padding: 3px 0px;
+}
+
+#er-date {
+    width: 200px;
+    text-align: center;
+}
+
+#er-symbol {
+    width: 200px;
+    text-align: center;
+}
+
+#er-symbol:hover {
+    cursor: pointer;
+}
+
+#er-hour {
+    width: 200px;
+    text-align: center;
+}
+
+#er-estimate {
+    width: 200px;
+    text-align: center;
+}
+
+#er-actual {
+    width: 200px;
+    text-align: center;
+}
+
+#er-surprise {
+    width: 200px;
+    text-align: center;
+}

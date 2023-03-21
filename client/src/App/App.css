@@ -1,0 +1,360 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('/Library/Fonts/SF-Pro-Text-Regular.otf');
+}
+  
+@font-face {
+    font-family: 'SF Pro Thin';
+    src: url('/Library/Fonts/SF-Pro-Text-Thin.otf');
+}
+
+@font-face {
+    font-family: 'SF Pro Semibold';
+    src: url('/Library/Fonts/SF-Pro-Text-Semibold.otf');
+}
+
+.Dashboard {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#app-nav {
+    width: 12vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid rgb(43, 39, 56);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#app-logo {
+    display: flex;
+    font-family: 'SF Pro Semibold';
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 30px
+}
+
+#app-logo:hover {
+    cursor: pointer;
+}
+
+#app-logo > img {
+    height: 40px;
+    margin: 10px
+}
+
+#app-search {
+    width: 75%;
+    position: relative;
+}
+
+#app-search > img {
+    -webkit-filter: invert(100%);
+    position: absolute;
+    height: 18px;
+    margin-left: 10px;
+    margin-top: 8px
+}
+
+#app-search > input {
+    background-color:transparent;
+    border: 1px solid gray;
+    height: 30px;
+    width: 100%;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'SF Pro Thin';
+    margin-bottom: 40px;
+    position: relative;
+}
+
+#app-search > input:focus {
+    outline: none
+}
+
+#suggestions {
+    width: 103%;
+    height: 300px;
+    background-color: rgb(10, 10, 10);
+    position: absolute;
+    z-index: 1;
+    top: 46%;
+    overflow-y: scroll;
+}
+
+.searchSuggestions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.searchSuggestions > #suggestion {
+    color: rgb(180, 180, 180);
+    font-size: 14px;
+    padding: 10px;
+    font-family: 'SF Pro Thin';
+    letter-spacing: 0.1em;
+    text-align: left;
+}
+
+.searchSuggestions:hover {
+    background-color: rgb(51, 51, 51);
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+
+#trending {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    width: 75%;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    transition: 0.2s;
+}
+
+#trending > h3 {
+    margin: 10px;
+    font-family: 'SF Pro Thin';
+    font-size: 18px;
+}
+
+#trending > img {
+    -webkit-filter: invert(100%);
+    height: 15px;
+    margin-right: 5px;
+}
+
+#trending:hover {
+    border: 1px solid rgb(151,151,255);
+    cursor: pointer;
+}
+
+#crypto{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    width: 75%;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: 0.2s
+}
+
+#crypto > h3 {
+    margin: 10px;
+    font-family: 'SF Pro Thin';
+    font-size: 18px;
+}
+
+#crypto > img {
+    -webkit-filter: invert(100%);
+    height: 15px;
+    margin-right: 5px;
+}
+
+#crypto:hover {
+    border: 1px solid rgb(151,151,255);
+    cursor: pointer;
+}
+
+#earnings {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    width: 75%;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: 0.2s
+}
+
+#earnings > h3 {
+    margin: 10px;
+    font-family: 'SF Pro Thin';
+    font-size: 18px;
+}
+
+#earnings > img {
+    -webkit-filter: invert(100%);
+    height: 15px;
+    margin-right: 5px;
+}
+
+#earnings:hover {
+    border: 1px solid rgb(151,151,255);
+    cursor: pointer;
+}
+
+#ipo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    width: 75%;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: 0.2s
+}
+
+#ipo > h3 {
+    margin: 10px;
+    font-family: 'SF Pro Thin';
+    font-size: 18px;
+}
+
+#ipo > img {
+    -webkit-filter: invert(100%);
+    height: 15px;
+    margin-right: 5px;
+}
+
+#ipo:hover {
+    border: 1px solid rgb(151,151,255);
+    cursor: pointer;
+}
+
+@keyframes toPurple {
+    from {
+        border: 1px solid black
+    }
+    to {
+        border: 1px solid rgb(151,151,255)
+    }
+}
+
+#right-side {
+    width: 88vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#top {
+    margin-top: 100px;
+    text-align: center;
+    line-height: 15px;
+    margin-bottom: 50px
+}
+
+#top > h3 {
+    font-family: 'SF Pro Thin';
+}
+
+#table-headers {
+    line-height: 0px;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    color: rgb(71, 66, 66);
+    border-bottom: 1px solid rgb(43, 39, 56);
+    justify-content: space-evenly;
+}
+
+#ticker-header {
+    width: 150px;
+}
+
+#name-header {
+    width: 350px;
+}
+
+#mentions-header {
+    width: 200px;
+    text-align: center;
+}
+
+#mchange-header {
+    width: 200px;
+    text-align: center;
+}
+
+#rank-header {
+    width: 200px;
+    text-align: center;
+}
+
+#upvotes-header {
+    width: 400px;
+    text-align: center;
+}
+
+#trending-data {
+    width: 80vw;
+    height: 100vh;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stocks {
+    display: flex;
+    width: 80vw;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid rgb(43, 39, 56);
+}
+
+.stocks > #ticker {
+    width: 150px;
+    font-family: 'SF Pro Semibold';
+    font-size: 22px;
+}
+
+.stocks > #ticker:hover {
+    cursor: pointer;
+}
+
+.stocks > #name {
+    width: 350px;
+    text-align: left;
+}
+
+.stocks > #mentions {
+    width: 200px;
+    background-image: linear-gradient(to right, rgb(151, 151, 255), rgb(255, 86, 255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.stocks > #mchange {
+    text-align: center;
+    width: 200px;
+}
+
+.stocks > #rchange {
+    width: 200px;
+    text-align: center;
+}
+
+.stocks > #upvotes {
+    width: 400px;
+    text-align: center;
+}
