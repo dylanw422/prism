@@ -24,7 +24,7 @@ function App() {
 
     useEffect(() => {
         getAllStocks()
-        fetch("http://localhost:8888/api/apewisdom").then(
+        fetch("https://prism-backend-5v644tzi1-dylanw422.vercel.app/api/apewisdom").then(
             response => response.json()
         ).then(
             data => {
